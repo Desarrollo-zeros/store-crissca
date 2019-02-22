@@ -116,7 +116,7 @@
         <nav class="side-navbar">
             <!-- Sidebar Header-->
             <div class="sidebar-header d-flex align-items-center">
-                <div class="avatar"><img src="{{$usuario["persona"]["img"]}}" alt="..." class="img-fluid rounded-circle"></div>
+                <div class="avatar"><img src="{{empty($usuario["persona"]["img"]) ? '' : $usuario["persona"]["img"]}}" alt="..." class="img-fluid rounded-circle"></div>
                 <div class="title">
                     <h1 class="h4">{{$usuario["username"]}}</h1>
                     <p>Adminitrador</p>
